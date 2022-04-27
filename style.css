@@ -1,0 +1,330 @@
+/* import */
+@import url(//db.onlinewebfonts.com/c/f28a8f550d384f1e8f3c85ff728c4987?family=Far+From+Homecoming);
+@import url(//db.onlinewebfonts.com/c/5fc6f4fd75e944a52a342ab2c7f100f1?family=Montserrat);
+@import url(//db.onlinewebfonts.com/c/bf68dd5175e7d5036019f991af7757a6?family=Montserrat+Thin);
+
+@font-face {
+    font-family: "Montserrat"; 
+    src: url("//db.onlinewebfonts.com/t/5fc6f4fd75e944a52a342ab2c7f100f1.eot"); 
+    src: url("//db.onlinewebfonts.com/t/5fc6f4fd75e944a52a342ab2c7f100f1.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/5fc6f4fd75e944a52a342ab2c7f100f1.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/5fc6f4fd75e944a52a342ab2c7f100f1.woff") format("woff"), url("//db.onlinewebfonts.com/t/5fc6f4fd75e944a52a342ab2c7f100f1.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/5fc6f4fd75e944a52a342ab2c7f100f1.svg#Montserrat") format("svg"); 
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Montserrat"; 
+    src: url("//db.onlinewebfonts.com/t/bf68dd5175e7d5036019f991af7757a6.eot"); 
+    src: url("//db.onlinewebfonts.com/t/bf68dd5175e7d5036019f991af7757a6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/bf68dd5175e7d5036019f991af7757a6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/bf68dd5175e7d5036019f991af7757a6.woff") format("woff"), url("//db.onlinewebfonts.com/t/bf68dd5175e7d5036019f991af7757a6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/bf68dd5175e7d5036019f991af7757a6.svg#Montserrat Thin") format("svg"); 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Far From Homecoming"; 
+    src: url("//db.onlinewebfonts.com/t/f28a8f550d384f1e8f3c85ff728c4987.eot"); 
+    src: url("//db.onlinewebfonts.com/t/f28a8f550d384f1e8f3c85ff728c4987.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/f28a8f550d384f1e8f3c85ff728c4987.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/f28a8f550d384f1e8f3c85ff728c4987.woff") format("woff"), url("//db.onlinewebfonts.com/t/f28a8f550d384f1e8f3c85ff728c4987.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/f28a8f550d384f1e8f3c85ff728c4987.svg#Far From Homecoming") format("svg"); 
+}
+
+
+/* components */
+input,select {
+    padding: .5rem 1rem;
+    border: 0px;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    color: var(--red);
+    border: 0px;
+    cursor: pointer;
+    margin: 2rem .5rem 2rem 0;
+    font-weight: bold;
+}
+
+.btn.outlined {
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+form>.btn {
+    padding: 1rem 2.5rem;
+}
+
+input:not(input[type="checkbox"]) {
+    width: 100%;
+    border: 0px;
+    margin: .5rem auto;
+    color: var(--black);
+    font-weight: bold;
+}
+
+input.outlined:not(input[type="checkbox"]) {
+    color: var(--white);
+    background-color: transparent;
+    border: 1px solid var(--white);
+}
+
+input.outlined::placeholder {
+    color: var(--white);
+    opacity: .5;
+}
+
+.icon {
+    width: 2.75rem;
+    padding: .5rem;
+    margin: 1rem .5rem;
+}
+
+.link {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* variables */
+:root {
+    --blue : #114C92;
+    --red : #B11313;
+    --yellow : #F1C530;
+    --black : #000000;
+    --white : #FFFFFF;
+    font-size: 10px;
+}
+
+/* default */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    color: var(--white);
+    font-size: 1rem;
+}
+
+/* colors */
+.bg-red {
+    background-color: var(--red);
+}
+
+.bg-blue {
+    background-color: var(--blue);
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+/* typo */
+.h1 {
+    font-family: "Far From Homecoming";
+    font-size: 2.5rem;
+    font-weight: lighter;
+}
+
+.h2 {
+    font-family: "Far From Homecoming";
+    font-weight: 500;
+    font-size:  1.75rem;
+    text-transform: uppercase;
+    margin: .75rem auto;
+}
+
+.h3 {
+    font-weight: bold;
+    font-size: 1.43rem;
+}
+
+.subtitle {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+p {
+    font-weight: lighter;
+}
+
+section {
+    text-align: center;
+}
+
+/* layouts */
+.rounded {
+    border-radius: 28px;
+}
+
+.container {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.with-space-between {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.logo-set {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 1rem;
+}
+
+.logo:nth-child(2) {
+    width: 5%;
+}
+
+.logo:nth-child(2n+1) {
+    width: 40%;
+    height: 3.5rem;
+}
+
+.logo {
+    margin: auto .5rem;
+}
+
+img {
+    width: 100%;
+    max-width: fit-content;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    top: 1%;
+}
+
+#hero {
+    padding-top:8rem;
+}
+
+ul.nav-items {
+    display: none;
+}
+
+section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+form {
+    margin-top: 4rem;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5rem 1rem 0 1rem;
+}
+
+#newsletter>form {
+    width: 75%;
+}
+
+.card {
+    margin-top: 5rem;
+}
+
+.card-header {
+    padding: 0 15%;
+}
+
+.card-body {
+    padding-top: 2.5rem;
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    text-align: left;
+    margin: 2rem 1rem;
+}
+
+.form-group>input[type=checkbox] {
+    margin: 0 2rem;
+    transform: scale(2);
+    transform-origin: top left;
+}
+
+footer {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.horizontal-centered {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    "link1 blank"
+    "link2 select"
+    "link3 select"
+    "link4 select"
+    "link5 select"
+    "logo logo";
+    grid-template-columns: 1fr 1fr;
+    row-gap: .5rem;
+    margin: 0 auto 2rem auto;
+}
+
+.grid-item:nth-child(1) {
+    grid-area: link1;
+}
+ 
+.grid-item:nth-child(2) {
+    grid-area: link2;
+}
+ 
+.grid-item:nth-child(3) {
+    grid-area: link3;
+}
+ 
+.grid-item:nth-child(4) {
+    grid-area: link4;
+}
+ 
+.grid-item:nth-child(5) {
+    grid-area: link5;
+}
+ 
+.grid-item:nth-child(6) {
+    grid-area: select;
+    justify-self: end;
+}
+ 
+.grid-item:nth-child(7) {
+    grid-area: logo;
+    justify-self: center;
+}
+ 
+/* background */
+
+#hero {
+    background-image: url("./assets/illustration/img1.png");
+    background-repeat:no-repeat;
+    background-size: contain;
+}
+
+#order {
+    background-image: url("./assets/illustration/img5.png");
+    background-repeat:no-repeat;
+    background-size: contain;
+}
+
+#newsletter {
+    background-image: url("./assets/illustration/img6.png");
+    background-repeat:no-repeat;
+    background-size: 75vw;
+    background-position: right -115% bottom 0%;
+}

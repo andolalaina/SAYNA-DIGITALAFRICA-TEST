@@ -4,137 +4,147 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//db.onlinewebfonts.com/c/f28a8f550d384f1e8f3c85ff728c4987?family=Far+From+Homecoming" rel="stylesheet" type="text/css"/>
+    <link href="//db.onlinewebfonts.com/c/bf68dd5175e7d5036019f991af7757a6?family=Montserrat+Thin" rel="stylesheet" type="text/css"/>
+    <link href="//db.onlinewebfonts.com/c/5fc6f4fd75e944a52a342ab2c7f100f1?family=Montserrat" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="./style.css">
     <title>Accueil - Sayna X Marvel</title>
 </head>
 <body>
-    <header class="bg-red">
-        <nav class="with-space-between">
-            <a href="#">
-                <div class="vertical-centered">
-                    <img src="./assets/logo/logo1.png" alt="Sayna logo">
-                    <img src="./assets/logo/logo2.png" alt="x">
-                    <img src="./assets/logo/logo3.png" alt="Marvel logo">
-                </div>
-            </a>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Adversaires</a></li>
-                <li><a href="#">Héros</a></li>
-                <li><a href="#">À propos</a></li>
-            </ul>
-        </nav>
+    <header>
+        <div class="container">
+            <nav class="with-space-between">
+                <a href="#">
+                    <div class="logo-set">
+                        <img class="logo" src="./assets/logo/logo1.png" alt="Sayna logo">
+                        <img class="logo" src="./assets/logo/logo2.png" alt="x">
+                        <img class="logo" src="./assets/logo/logo3.png" alt="Marvel logo">
+                    </div>
+                </a>
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="#">Accueil</a></li>
+                    <li class="nav-item"><a href="#">Adversaires</a></li>
+                    <li class="nav-item"><a href="#">Héros</a></li>
+                    <li class="nav-item"><a href="#">À propos</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section id="hero" class="bg-red">
-        <div class="illustrated-content" style="background-image: url(./assets/illustration/img1.png);">
-            <h2>SPIDERMAN</h2>
+    <div id="hero" class="bg-red">
+        <div class="container">
+            <h1 class="h1">SPIDERMAN</h1>
             <div>
-                <button>Voir les Héros</button>
-                <button class="outlined">Voir les Adversaires</button>
-                <h5>L'arraignée sympa du quartier</h5>
+                <h5 class="subtitle">L'araignée sympa du quartier !</h5>
+                <button class="btn rounded">Voir les Héros</button>
+                <button class="btn rounded outlined">Voir les Adversaires</button>
             </div>
         </div>
-        <article>
-            <h3>Les Spidermans au cinéma</h3>
-            <p>Spiderman a pu bénéficier de reboot qui ont permis d’adapter ses histoires
-                pour chaque génération !</p>
-            <div>
-                <div class="card">
-                    <div class="card-header">
-                        <img src="./assets/illustration/img3.png" alt="spiderman">
+        <section>
+            <article class="container">
+                <h2 class="h2">Les Spidermans au cinéma</h2>
+                <p>Spiderman a pu bénéficier de reboot qui ont permis d’adapter ses histoires <br>
+pour chaque génération !</p>
+                <div>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./assets/illustration/img3.png" alt="spiderman">
+                        </div>
+                        <div class="card-body">
+                            <p>Trois films Spiderman sont sortis en 2002, 2004 et 2007. Ils sont produits par Columbia Pictures et Spiderman est incarné par Tobey Maguire. Un quatrième était prévu, mais sera finalement annulé suite à des désaccords entre Sam Raimi (le réalisateur) et Sony. <br>
+                                Cette première trilogie a connu un grand succès auprès des fans et du grand public. L’épisode 3 reste à ce jour un des films les plus chers de l’histoire du cinéma.
+                            </p>
+                            <button class="btn rounded">Voir ses adversaires</button>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <p>
-                            Trois films Spiderman sont sortis en 2002, 2004 et 2007. Ils sont produits par Columbia
-                            Pictures et Spiderman est incarné par Tobey Maguire. Un quatrième était prévu, mais sera
-                            finalement annulé suite à des désaccords entre Sam Raimi (le réalisateur) et Sony.
-                            Cette première trilogie a connu un grand succès auprès des fans et du grand public.
-                            L’épisode 3 reste à ce jour un des films les plus chers de l’histoire du cinéma.
-                        </p>
-                        <button>Voir ses adversaires</button>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./assets/illustration/img2.png" alt="spiderman">
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                The Amazing Spiderman est sorti en 2012, c’est Andrew Garfield qui incarne le héros et
+                                Marc Webb à la réalisation. Un deuxième volet, The Amazing Spider-Man : Le destin d'un
+                                héros, est sorti en 2014 et a reçu des critiques très mitigées. Un troisième et quatrième film
+                                étaient prévus pour 2016 et 2018. Finalement, Marvel et Sony trouvent un accord pour
+                                introduire Spiderman dans l'Univers cinématographique Marvel et abandonne ainsi The
+                                Amazing Spider-Man.
+                            </p>
+                            <button class="btn rounded">Voir ses adversaires</button>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <img src="./assets/illustration/img2.png" alt="spiderman">
-                    </div>
-                    <div class="card-body">
-                        <p>
-                            The Amazing Spiderman est sorti en 2012, c’est Andrew Garfield qui incarne le héros et
-                            Marc Webb à la réalisation. Un deuxième volet, The Amazing Spider-Man : Le destin d'un
-                            héros, est sorti en 2014 et a reçu des critiques très mitigées. Un troisième et quatrième film
-                            étaient prévus pour 2016 et 2018. Finalement, Marvel et Sony trouvent un accord pour
-                            introduire Spiderman dans l'Univers cinématographique Marvel et abandonne ainsi The
-                            Amazing Spider-Man.
-                        </p>
-                        <button>Voir ses adversaires</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <img src="./assets/illustration/img4.png" alt="spiderman">
-                    </div>
-                    <div class="card-body">
-                        <p>
-                            Spiderman, désormais incarné par Tom Holland, apparaît pour la première fois dans
-                            l’univers Marvel avec Captain America : Civil War, sorti en 2016. Par la suite, une trilogie de
-                            films lui est consacrée :
-                            Spiderman : Homecoming (2017)
-                            Spiderman : Far From Home (2019)
-                            Spiderman : No Way Home (2021)
-                            Le héro est également présent dans Avengers Infinity War et Avengers End Game,
-                            combattant au côté des Avengers.
-                        </p>
-                        <button>Voir ses adversaires</button>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./assets/illustration/img4.png" alt="spiderman">
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                Spiderman, désormais incarné par Tom Holland, apparaît pour la première fois dans
+                                l’univers Marvel avec Captain America : Civil War, sorti en 2016. Par la suite, une trilogie de
+                                films lui est consacrée : <br>
+                                - Spiderman : Homecoming (2017) <br>
+                                - Spiderman : Far From Home (2019) <br>
+                                - Spiderman : No Way Home (2021) <br>
+                                Le héro est également présent dans Avengers Infinity War et Avengers End Game,
+                                combattant au côté des Avengers.
+                            </p>
+                            <button class="btn rounded">Voir ses adversaires</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </article>
+            </article>
+        </section>
+    </div>
+    <section id="order" class="bg-blue container">
+        <h2 class="h2">Deviens Spiderman !</h2>
+        <p>Rempli le formulaire ci-dessous afin de recevoir ton propre costume.</p>
+        <form action="#">
+            <input class="rounded" type="text" name="nom" id="nom" placeholder="Nom"/>
+            <input class="rounded" type="text" name="prenom" id="prenom" placeholder="Prénom"/>
+            <input class="rounded" type="number" name="taille" id="taille" placeholder="Taille (cm)"/>
+            <input class="rounded" type="number" name="poids" id="poids" placeholder="Poids (kg)"/>
+            <input class="rounded" type="email" name="email" id="email" placeholder="Adresse email"/>
+            <button class="btn rounded outlined">Envoyer</button>
+        </form>
     </section>
-    <section id="order" class="bg-blue">
-        <div class="illustrated-content reversed" style="background-image: url(./assets/illustration/img5.png);">
-            <h3>Deviens Spiderman !</h3>
-            <p>Rempli le formulaire ci-dessous afin de recevoir ton propre costume.</p>
-            <form action="#">
-                <input type="text" name="nom" id="nom" placeholder="Nom"/>
-                <input type="text" name="prenom" id="prenom" placeholder="Prénom"/>
-                <input type="number" name="taille" id="taille" placeholder="Taille (cm)"/>
-                <input type="number" name="poids" id="poids" placeholder="Poids (kg)"/>
-                <input type="email" name="email" id="email" placeholder="Adresse email"/>
-                <button class="outlined">Envoyer</button>
-            </form>
-        </div>
-    </section>
-    <section id="newsletter" class="bg-red">
-        <div class="illustrated-content" style="background-image: url(./assets/illustration/img6.png);">
-            <h3>Inscrit toi à la newsletter !</h3>
-            <p>L’univers de l’araignée justicière te passionne ? Reste au courant des dernières actualités grâce à notre newsletter !</p>
-            <form action="#">
-                <input type="text" name="identite" id="identite" placeholder="Nom Prénom" class="outlined"/>
-                <input type="email" name="email" id="email" placeholder="Adresse email" class="outlined"/>
-                <input type="checkbox" name="confidentialite" id="confidentialite"/>
+    <section id="newsletter" class="bg-red container">
+        <h2 class="h2">Inscrit toi à la newsletter !</h2>
+        <p>L’univers de l’araignée justicière te passionne ? Reste au courant des dernières actualités grâce à notre newsletter !</p>
+        <form action="#">
+            <input class="outlined rounded" type="text" name="identite" id="identite" placeholder="Nom Prénom" class="outlined"/>
+            <input class="outlined rounded" type="email" name="email" id="email" placeholder="Adresse email" class="outlined"/>
+            <div class="form-group">
+                <input class="rounded" type="checkbox" name="confidentialite" id="confidentialite"/>
                 <label for="confidentialite">Je reconnais accepter la <a href="#" class="text-white">politique de confidentialité</a> de Sayna X Marvel.</label>
-                <button>S'inscrire à la newsletter</button>
-            </form>
-        </div>
+            </div>
+            <button class="btn rounded bg-white">S'inscrire à la newsletter</button>
+        </form>
     </section>
-    <footer class="bg-black">
+    <footer class="container bg-black">
         <div class="grid-container">
-            <div class="grid-item"><a href="#">Mobile app</a></div>
-            <div class="grid-item"><a href="#">Politique de confidentialité</a></div>
-            <div class="grid-item"><a href="#">Cookies</a></div>
-            <div class="grid-item"><a href="#">Contact</a></div>
-            <div class="grid-item"><a href="#">Blog</a></div>
-            <div class="grid-item"><select name="langue" id="langue" class="red-themed-background"><option value="0" selected>Langue</option></select></div>
+            <div class="grid-item"><a class="link" href="#">Mobile app</a></div>
+            <div class="grid-item"><a class="link" href="#">Politique de confidentialité</a></div>
+            <div class="grid-item"><a class="link" href="#">Cookies</a></div>
+            <div class="grid-item"><a class="link" href="#">Contact</a></div>
+            <div class="grid-item"><a class="link" href="#">Blog</a></div>
+            <div class="grid-item"><select class="rounded bg-red" name="langue" id="langue" class="red-themed-background"><option value="0" selected>Langue</option></select></div>
             <div class="grid-item">
                 <a href="#">
-                    <div class="vertical-centered">
-                        <img src="./assets/logo/logo1.png" alt="Sayna logo">
-                        <img src="./assets/logo/logo2.png" alt="x">
-                        <img src="./assets/logo/logo3.png" alt="Marvel logo">
+                    <div class="logo-set horizontal-centered">
+                        <img class="logo" src="./assets/logo/logo1.png" alt="Sayna logo">
+                        <img class="logo" src="./assets/logo/logo2.png" alt="x">
+                        <img class="logo" src="./assets/logo/logo3.png" alt="Marvel logo">
                     </div>
                 </a>
             </div>
+        </div>
+        <div class="horizontal-centered">
+            <div>
+                <a href="#"><img class="bg-red rounded icon" src="./assets/logo/logof.png" alt=""></a>
+                <a href="#"><img class="bg-red rounded icon" src="./assets/logo/logoi.png" alt=""></a>
+                <a href="#"><img class="bg-red rounded icon" src="./assets/logo/logoy.png" alt=""></a>
+                <a href="#"><img class="bg-red rounded icon" src="./assets/logo/logot.png" alt=""></a>
+            </div>
+            <p>© SaynaXMarvel, Inc. 2022. We love our users!</p>
         </div>
     </footer>
 </body>
