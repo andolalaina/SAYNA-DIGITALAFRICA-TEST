@@ -1,3 +1,4 @@
+/* #region custom fonts */
 @font-face {
     font-family: "Montserrat"; 
     src: url("./assets/font/Montserrat-VariableFont_wght.ttf");
@@ -7,15 +8,15 @@
     font-family: "Far From Homecoming"; 
     src: url("./assets/font/Far-From-Homecoming.woff2");
 }
+/* #endregion */
 
-/* variables */
+/* #region variables */
 :root {
     --blue : #114C92;
     --red : #B11313;
     --yellow : #F1C530;
     --black : #000000;
     --white : #FFFFFF;
-    --laptop-breakpoint-width : 1024px;
     font-size: 10px;
 }
 
@@ -30,8 +31,9 @@
         font-size: 18px;
     }
 }
+/* #endregion */
 
-/* default */
+/* #region default behaviour */
 * {
     margin: 0;
     box-sizing: border-box;
@@ -39,8 +41,9 @@
     color: var(--white);
     font-size: 1rem;
 }
+/* #endregion */
 
-/* background and colors */
+/* #region background and colors */
 
 #hero {
     background-image: url("./assets/illustration/img1.png");
@@ -61,7 +64,6 @@
     background-position: 225% bottom;
 }
 
-/* colors */
 .bg-red {
     background-color: var(--red);
 }
@@ -88,7 +90,8 @@
     }
 
     #newsletter {
-        background-size: 85%;
+        background-size: 50%;
+        background-position: 125% bottom;
     }
 }
 @media only screen and (min-width: 1920px) {
@@ -98,8 +101,9 @@
         background-position: 135% bottom;
     }
 }
+/* #endregion */
 
-/* components */
+/* #region components */
 input,select {
     padding: .5rem 1rem;
     border: 0px;
@@ -209,8 +213,9 @@ audio {
         padding: 0;
     }
 }
+/* #endregion */
 
-/* typography */
+/* #region typography */
 .h1 {
     font-family: "Far From Homecoming";
     font-size: 2.5rem;
@@ -280,8 +285,9 @@ section {
         text-align: justify;
     }
 }
+/* #endregion */
 
-/* layouts */
+/* #region layouts */
 .rounded {
     border-radius: 28px;
 }
@@ -524,4 +530,4 @@ footer {
     }
 
 }
- 
+/* #endregion */
