@@ -23,6 +23,96 @@
     src: url("//db.onlinewebfonts.com/t/f28a8f550d384f1e8f3c85ff728c4987.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/f28a8f550d384f1e8f3c85ff728c4987.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/f28a8f550d384f1e8f3c85ff728c4987.woff") format("woff"), url("//db.onlinewebfonts.com/t/f28a8f550d384f1e8f3c85ff728c4987.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/f28a8f550d384f1e8f3c85ff728c4987.svg#Far From Homecoming") format("svg"); 
 }
 
+/* variables */
+:root {
+    --blue : #114C92;
+    --red : #B11313;
+    --yellow : #F1C530;
+    --black : #000000;
+    --white : #FFFFFF;
+    --laptop-breakpoint-width : 1024px;
+    font-size: 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    :root {
+        font-size: 18px;
+    }
+}
+
+/* default */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    color: var(--white);
+    font-size: 1rem;
+}
+
+/* background and colors */
+
+#hero {
+    background-image: url("./assets/illustration/img1.png");
+    background-repeat:no-repeat;
+    background-size: contain;
+}
+
+#order {
+    background-image: url("./assets/illustration/img5.png");
+    background-repeat:no-repeat;
+    background-size: contain;
+}
+
+#newsletter {
+    background-image: url("./assets/illustration/img6.png");
+    background-repeat:no-repeat;
+    background-size: 75%;
+    background-position: 225% bottom;
+}
+
+/* colors */
+.bg-red {
+    background-color: var(--red);
+}
+
+.bg-blue {
+    background-color: var(--blue);
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+@media only screen and (min-width: 1024px) {
+    .full-screen {
+        height: 100vh;
+    }
+
+    #newsletter {
+        background-size: 85%;
+    }
+}
+@media only screen and (min-width: 1920px) {
+
+    #newsletter {
+        background-size: contain;
+        background-position: 135% bottom;
+    }
+}
 
 /* components */
 input,select {
@@ -37,6 +127,7 @@ input,select {
     cursor: pointer;
     margin: 2rem .5rem 2rem 0;
     font-weight: bold;
+    min-width: 12.5rem;
 }
 
 .btn.outlined {
@@ -79,47 +170,62 @@ input.outlined::placeholder {
     font-weight: 600;
 }
 
-/* variables */
-:root {
-    --blue : #114C92;
-    --red : #B11313;
-    --yellow : #F1C530;
-    --black : #000000;
-    --white : #FFFFFF;
-    font-size: 10px;
+.card {
+    margin-top: 5rem;
 }
 
-/* default */
-* {
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat";
-    color: var(--white);
-    font-size: 1rem;
+.card-header {
+    padding: 0 15%;
 }
 
-/* colors */
-.bg-red {
-    background-color: var(--red);
+.card-body {
+    padding-top: 2.5rem;
 }
 
-.bg-blue {
-    background-color: var(--blue);
+.card-footer {
+    text-align: center;
 }
 
-.bg-black {
-    background-color: var(--black);
+.form-group {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    text-align: left;
+    margin: 2rem 1rem;
 }
 
-.bg-white {
-    background-color: var(--white);
+.form-group>input[type=checkbox] {
+    margin: 0 2rem;
+    transform: scale(2);
+    transform-origin: top left;
 }
 
-.bg-transparent {
-    background-color: transparent;
+audio {
+    background-color: #F1F3F4;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
 }
 
-/* typo */
+@media only screen and (min-width : 1024px) {
+    select {
+        min-width: 10rem;
+    }
+
+    .card {
+        margin-top: 2.5rem;
+    }
+
+    .card-header>img {
+        max-width: unset;
+    }
+
+    .card-header {
+        padding: 0;
+    }
+}
+
+/* typography */
 .h1 {
     font-family: "Far From Homecoming";
     font-size: 2.5rem;
@@ -152,14 +258,52 @@ section {
     text-align: center;
 }
 
+@media only screen and (min-width: 1024px) {
+    .h1 {
+        font-size: 5rem;
+    }
+
+    .h2 {
+        margin: .75rem 0;
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
+    }
+
+    section {
+        text-align: justify;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .h1 {
+        font-size: 7.5rem;
+    }
+
+    .h2 {
+        margin: .75rem 0;
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 2rem;
+    }
+
+    section {
+        text-align: justify;
+    }
+}
+
 /* layouts */
 .rounded {
     border-radius: 28px;
 }
 
 .container {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 
 .with-space-between {
@@ -171,7 +315,6 @@ section {
 .logo-set {
     display: flex;
     justify-content: flex-start;
-    padding-top: 1rem;
 }
 
 .logo:nth-child(2) {
@@ -212,7 +355,6 @@ section {
 }
 
 form {
-    margin-top: 4rem;
     width: 100%;
     display: flex;
     flex-flow: column;
@@ -225,43 +367,17 @@ form {
     width: 75%;
 }
 
-.card {
-    margin-top: 5rem;
-}
-
-.card-header {
-    padding: 0 15%;
-}
-
-.card-body {
-    padding-top: 2.5rem;
-}
-
-.form-group {
-    width: 100%;
-    display: flex;
-    align-items: stretch;
-    text-align: left;
-    margin: 2rem 1rem;
-}
-
-.form-group>input[type=checkbox] {
-    margin: 0 2rem;
-    transform: scale(2);
-    transform-origin: top left;
-}
-
-footer {
-    padding-top: 5rem;
-    padding-bottom: 2rem;
-}
-
 .horizontal-centered {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+
+footer {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
 }
 
 .grid-container {
@@ -307,24 +423,120 @@ footer {
     grid-area: logo;
     justify-self: center;
 }
+
+.card-container {
+    display: grid;
+}
+
+@media only screen and (min-width: 1024px) {
+    .rounded {
+        border-radius: 24px;
+    }
+
+    header {
+        top: 0;
+        background-color: var(--red);
+        padding: 1rem 0;
+        position: static;
+    }
+
+    section {
+        padding-top: 5rem;
+        padding-bottom: 7.5rem;
+    }
+
+    form {
+        text-align: center;
+        margin: 3rem 0;
+        max-width: 25vw;
+    }
+
+    #hero {
+        padding-top: 17.5rem;
+    }
+    
+    #hero>.container {
+        margin-bottom: 10rem;
+    }
+    
+    #direct-navigation {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #order {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    #newsletter {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul.nav-items {
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .nav-item {
+        list-style: none;
+    }
+
+    .nav-item>a {
+        text-decoration: none;
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5rem;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-areas: "link1 link2 link3 logo logo link4 link5 select";
+        row-gap: .5rem;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: repeat(8, 1fr);
+        margin: 0 auto 2rem auto;
+    }
+    
+    .grid-item:nth-child(1) {
+        grid-area: link1;
+    }
+     
+    .grid-item:nth-child(2) {
+        grid-area: link2;
+    }
+     
+    .grid-item:nth-child(3) {
+        grid-area: link3;
+    }
+     
+    .grid-item:nth-child(4) {
+        grid-area: link4;
+    }
+     
+    .grid-item:nth-child(5) {
+        grid-area: link5;
+    }
+     
+    .grid-item:nth-child(6) {
+        grid-area: select;
+        justify-self: end;
+    }
+     
+    .grid-item:nth-child(7) {
+        grid-area: logo;
+        justify-self: center;
+    }
+
+}
  
-/* background */
-
-#hero {
-    background-image: url("./assets/illustration/img1.png");
-    background-repeat:no-repeat;
-    background-size: contain;
-}
-
-#order {
-    background-image: url("./assets/illustration/img5.png");
-    background-repeat:no-repeat;
-    background-size: contain;
-}
-
-#newsletter {
-    background-image: url("./assets/illustration/img6.png");
-    background-repeat:no-repeat;
-    background-size: 75vw;
-    background-position: right -115% bottom 0%;
-}

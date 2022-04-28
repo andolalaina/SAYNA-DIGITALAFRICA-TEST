@@ -33,10 +33,12 @@
     <div id="hero" class="bg-red">
         <div class="container">
             <h1 class="h1">SPIDERMAN</h1>
-            <div>
+            <div id="direct-navigation">
                 <h5 class="subtitle">L'araignée sympa du quartier !</h5>
-                <button class="btn rounded">Voir les Héros</button>
-                <button class="btn rounded outlined">Voir les Adversaires</button>
+                <div>
+                    <button class="btn rounded">Voir les Héros</button>
+                    <button class="btn rounded outlined">Voir les Adversaires</button>
+                </div>
             </div>
         </div>
         <section>
@@ -44,7 +46,7 @@
                 <h2 class="h2">Les Spidermans au cinéma</h2>
                 <p>Spiderman a pu bénéficier de reboot qui ont permis d’adapter ses histoires <br>
 pour chaque génération !</p>
-                <div>
+                <div class="card-container">
                     <div class="card">
                         <div class="card-header">
                             <img src="./assets/illustration/img3.png" alt="spiderman">
@@ -53,6 +55,8 @@ pour chaque génération !</p>
                             <p>Trois films Spiderman sont sortis en 2002, 2004 et 2007. Ils sont produits par Columbia Pictures et Spiderman est incarné par Tobey Maguire. Un quatrième était prévu, mais sera finalement annulé suite à des désaccords entre Sam Raimi (le réalisateur) et Sony. <br>
                                 Cette première trilogie a connu un grand succès auprès des fans et du grand public. L’épisode 3 reste à ce jour un des films les plus chers de l’histoire du cinéma.
                             </p>
+                        </div>
+                        <div class="card-footer">
                             <button class="btn rounded">Voir ses adversaires</button>
                         </div>
                     </div>
@@ -69,6 +73,8 @@ pour chaque génération !</p>
                                 introduire Spiderman dans l'Univers cinématographique Marvel et abandonne ainsi The
                                 Amazing Spider-Man.
                             </p>
+                        </div>
+                        <div class="card-footer">
                             <button class="btn rounded">Voir ses adversaires</button>
                         </div>
                     </div>
@@ -87,6 +93,8 @@ pour chaque génération !</p>
                                 Le héro est également présent dans Avengers Infinity War et Avengers End Game,
                                 combattant au côté des Avengers.
                             </p>
+                        </div>
+                        <div class="card-footer">
                             <button class="btn rounded">Voir ses adversaires</button>
                         </div>
                     </div>
@@ -94,7 +102,7 @@ pour chaque génération !</p>
             </article>
         </section>
     </div>
-    <section id="order" class="bg-blue container">
+    <section id="order" class="bg-blue container full-screen">
         <h2 class="h2">Deviens Spiderman !</h2>
         <p>Rempli le formulaire ci-dessous afin de recevoir ton propre costume.</p>
         <form action="#">
@@ -106,7 +114,7 @@ pour chaque génération !</p>
             <button class="btn rounded outlined">Envoyer</button>
         </form>
     </section>
-    <section id="newsletter" class="bg-red container">
+    <section id="newsletter" class="bg-red container full-screen">
         <h2 class="h2">Inscrit toi à la newsletter !</h2>
         <p>L’univers de l’araignée justicière te passionne ? Reste au courant des dernières actualités grâce à notre newsletter !</p>
         <form action="#">
@@ -119,6 +127,9 @@ pour chaque génération !</p>
             <button class="btn rounded bg-white">S'inscrire à la newsletter</button>
         </form>
     </section>
+    <audio controls autoplay>
+        <source src="./assets/audio/audio1.mp3" type="audio/mpeg">
+    </audio>
     <footer class="container bg-black">
         <div class="grid-container">
             <div class="grid-item"><a class="link" href="#">Mobile app</a></div>
@@ -147,5 +158,6 @@ pour chaque génération !</p>
             <p>© SaynaXMarvel, Inc. 2022. We love our users!</p>
         </div>
     </footer>
+    
 </body>
 </html>
